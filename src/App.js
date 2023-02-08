@@ -7,11 +7,11 @@ import Cart from "./components/Cart/Cart";
 function App() {
   return (
     <Fragment>
-      {/* <Cart /> */}
+      <Cart />
       <Header />
-      {/* <main>
+      <main>
         <Meals />
-      </main> */}
+      </main>
     </Fragment>
   );
 }
