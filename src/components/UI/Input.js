@@ -1,11 +1,11 @@
 import classes from "./Input.module.css";
 
-const Input = (props) => {
+const Input = ({ label, input }) => {
   return (
     <div className={classes.input}>
       <label>
-        {props.label}
-        <input {...props.input} />
+        {label}
+        <input {...input} />
       </label>
     </div>
   );

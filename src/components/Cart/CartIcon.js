@@ -1,7 +1,8 @@
 import React from "react";
 import { FaCartArrowDown } from "react-icons/fa";
 import classes from "./HeaderCart.module.css";
-export default function CartIcon() {
+
+const CartIcon = () => {
   return (
     <div>
       <button className={classes.button}>
@@ -13,4 +14,5 @@ export default function CartIcon() {
       </button>
     </div>
   );
-}
+};
+export default CartIcon;
