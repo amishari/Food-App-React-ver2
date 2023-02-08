@@ -12,7 +12,7 @@ const MealItemForm = ({ id }) => {
           min: "1",
           max: "5",
           step: "1",
-          defaultValue: "1",
+          defaultValue: "0",
         }}
       />
       <button>+ Add</button>
