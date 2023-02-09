@@ -2,7 +2,7 @@ import React from "react";
 import { FaCartArrowDown } from "react-icons/fa";
 import classes from "./HeaderCart.module.css";
 
-const HeaderCart = ({ onClick }) => {
+const HeaderCart = ({onClick}) => {
   return (
     <div>
       <button className={classes.button} onClick={onClick}>
