@@ -4,12 +4,12 @@
     margin-bottom: 0.5rem;
   }
   
-  .input label {
+.input label {
     font-weight: bold;
     margin-right: 1rem;
   }
   
-  .input input {
+.input input {
     width: 3rem;
     border-radius: 5px;
     border: 1px solid #ccc;
