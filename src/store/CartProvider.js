@@ -8,17 +8,17 @@ const defaultCartState = {
 const cartReducer = (state, action) => {
   if (action.type === "ADD") {
     const updatedItem = state.items.concat(action.item);
-    const updatedtotalAmount =
+    const updatedTotalAmount =
       state.totalAmount + action.item.price * action.item.amount;
     return {
       items: updatedItem,
-      totalAmount: updatedtotalAmount,
+      totalAmount: updatedTotalAmount,
     };
   }
   return defaultCartState;
 };
 const CartProvider = ({ children }) => {
-  const [cartstate, dispatchCartAction] = useReducer(
+  const [cartState, dispatchCartAction] = useReducer(
     cartReducer,
     defaultCartState
   );
@@ -31,8 +31,8 @@ const CartProvider = ({ children }) => {
   };
 
   const cartContext = {
-    items: cartstate.item,
-    totalAmount: cartstate.totalAmount,
+    items: cartState.item,
+    totalAmount: cartState.totalAmount,
     addItem: addItemToCartHandler,
     removeItem: removeItemFromCartHandler,
   };
