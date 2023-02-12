@@ -17,7 +17,11 @@ const App = () => {
   };
 
   return (
+<<<<<<< HEAD
     <CartProvider>
+=======
+    <Fragment>
+>>>>>>> dc4285bc1e7d54dbc155d5ae7c95226ea5639394
       {cartIsShown && <Cart onClose={hideCartHandler} />}
       <Header onShowCart={showCartHandler} />
       <main>
