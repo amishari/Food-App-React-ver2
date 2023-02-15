@@ -13,7 +13,7 @@ const CartItem = ({ key, id, name, amount, price, onAdd, onRemove }) => {
         </div>
       </div>
       <div className={classes.actions}>
-        <button onClick={onRemove}>−</button>
+        <button onClick={onRemove}>-</button>
         <button onClick={onAdd}>+</button>
       </div>
     </li>
